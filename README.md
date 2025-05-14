@@ -43,22 +43,27 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+![1](https://github.com/user-attachments/assets/7eb70697-3d26-485c-a905-3acdc2cbdefc)
 
 
 cat < file2
 ## OUTPUT
+![2](https://github.com/user-attachments/assets/e3b2781f-6b07-4c7a-9dc4-c96e741d322d)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![3](https://github.com/user-attachments/assets/f6ba0a81-c2f2-461f-8a8d-aaf4dacf2ffb)
+
 comm file1 file2
  ## OUTPUT
+![4](https://github.com/user-attachments/assets/2587e84e-d484-4a8a-abb3-c04bd31f02c1)
 
  
 diff file1 file2
 ## OUTPUT
+![5](https://github.com/user-attachments/assets/08f8d0ef-e232-45d5-9583-a1fa1258d494)
 
 
 #Filters
@@ -83,16 +88,19 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
+![6](https://github.com/user-attachments/assets/bd10cc7a-8498-4752-b48c-3f3e51769e64)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
+![7](https://github.com/user-attachments/assets/2dc05892-fc72-4f7f-8e24-ee7898bc8e24)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![8](https://github.com/user-attachments/assets/5c7d7b5a-69a4-47cd-9145-b6a179c6f3ad)
 
 
 cat < newfile 
@@ -108,39 +116,43 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
+![9](https://github.com/user-attachments/assets/10bb3c7c-7a7f-4778-8c5b-619aaee1b899)
 
 
 grep hello newfile 
 ## OUTPUT
 
+![10](https://github.com/user-attachments/assets/df1c3614-1182-4773-811a-4fd8a33d4c7a)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
 
+![11](https://github.com/user-attachments/assets/7c73133d-680e-4652-9e0d-40d5b9861109)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
-
-
+![12](https://github.com/user-attachments/assets/f5acd5fc-20ea-4d1d-afd7-8787d9816a7e)
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
+![12](https://github.com/user-attachments/assets/5f2c0861-edd2-4d4f-9c17-4b1fed673638)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
+![14](https://github.com/user-attachments/assets/7fb1328f-35bb-4b8c-8b41-ce8d61297053)
 
 
 grep -w -n world newfile   
 ## OUTPUT
 
+![15](https://github.com/user-attachments/assets/d5f90dce-1e4d-4bfd-8f00-7305d382cb70)
 
 cat < newfile 
 ```
@@ -164,58 +176,70 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
+![16](https://github.com/user-attachments/assets/dbd8b426-43ff-431a-9026-2e60f81f1567)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
+![17](https://github.com/user-attachments/assets/e9e1ab59-3da5-41ef-897d-ef5395bc9fcd)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
+![18](https://github.com/user-attachments/assets/559b555b-f477-4638-b3ae-afaa8696b86e)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
+![19](https://github.com/user-attachments/assets/5c2e3612-b233-4200-a94c-2bb3e8e0e7a3)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
+![20](https://github.com/user-attachments/assets/e55c047a-2217-4282-bbf4-2bd5cb8bec37)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
+![21](https://github.com/user-attachments/assets/ad5eb805-56e9-4964-84b9-875639a8ae8e)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
+![22](https://github.com/user-attachments/assets/7ab1b5a2-e9d1-45f6-8478-2c97c61bf2f3)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
+![23](https://github.com/user-attachments/assets/f7d4d856-2c5d-4149-a80c-23be8104065a)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
+![24](https://github.com/user-attachments/assets/ec64cec1-b5e3-4cea-b8e3-68c0ac816111)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 
+![25](https://github.com/user-attachments/assets/9c6115ec-13c4-429a-92bf-895ef3d754ec)
 
 egrep l{2} newfile
 ## OUTPUT
 
+![26](https://github.com/user-attachments/assets/304e3c24-be46-48cb-ba75-797a91b77b3d)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![27](https://github.com/user-attachments/assets/369f2105-02a4-42c9-abda-b85d76af5c62)
 
 
 cat > file23
@@ -235,30 +259,35 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
+![28](https://github.com/user-attachments/assets/45eb0398-a7a4-451e-86ce-28cf681050d1)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-
+![29](https://github.com/user-attachments/assets/81d7f86e-b4b6-4414-808f-f0641c3a87db)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+
+![30](https://github.com/user-attachments/assets/7102221a-e520-40df-b317-7c1a6504d861)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
+![31](https://github.com/user-attachments/assets/8d837f28-9356-4d11-b6ee-945afae2a727)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-
+![32](https://github.com/user-attachments/assets/23e5d0c6-5f94-4b02-ae38-f4eccbeeeb79)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+
 
 
 
