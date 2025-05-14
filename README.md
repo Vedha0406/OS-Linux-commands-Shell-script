@@ -1045,7 +1045,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
+![](img/sem%20i75.png)
 
 
 $ ./exread1.sh 
